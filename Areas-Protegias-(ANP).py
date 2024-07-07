@@ -19,7 +19,7 @@ if opcion == "Introducción":
         Las Áreas Naturales Protegidas (ANP) de Administración Nacional en Perú, gestionadas por el SERNANP, buscan conservar la biodiversidad, los ecosistemas y el patrimonio cultural. Protegen especies en peligro de extinción y sitios arqueológicos importantes. El SERNANP regula actividades humanas y fomenta el turismo sostenible y la investigación científica. La red de ANP incluye diversos ecosistemas, desde la Amazonía hasta los Andes y la costa, asegurando la preservación del patrimonio natural y cultural del país.
         """)
         # Mostrar la imagen
-        imagen = "imagen6.jpg"
+        imagen = "IMAGEN6.jpg"
         st.image(imagen, use_column_width=True)
 
     # Texto que aparecerá debajo de la imagen cuando se haga clic
