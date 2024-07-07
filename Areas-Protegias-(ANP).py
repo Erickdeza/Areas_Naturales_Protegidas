@@ -394,22 +394,22 @@ elif opcion == "Nosotros: Presentación del Grupo y su Compromiso con las Áreas
     # Información de cada integrante
     integrantes = [
         {
-            'nombre': 'Integrante 1',
+            'nombre': 'Deza Mamani Erick Armando',
             'descripcion': 'Hola! Soy el integrante 1. Me apasiona la conservación de la biodiversidad y la gestión sostenible de recursos naturales.',
             'imagen': 'IMAGEN1.jpeg'
         },
         {
-            'nombre': 'Integrante 2',
+            'nombre': 'Flores Messco Fiorella Ingrid ',
             'descripcion': '¡Hola a todos! Soy el integrante 2. Mi interés principal es la calidad del aire y el impacto ambiental de las industrias.',
             'imagen': 'IMAGEN2.jpeg'
         },
         {
-            'nombre': 'Integrante 3',
+            'nombre': 'Huamani Huallpa Ibet Yesenia',
             'descripcion': 'Saludos! Soy el integrante 3. Me especializo en la gestión de residuos sólidos y la promoción de prácticas ecoamigables.',
             'imagen': 'IMAGEN3.jpg'
         },
         {
-            'nombre': 'Integrante 4',
+            'nombre': 'Sanchez Ticllasuca Brenda Estefany',
             'descripcion': 'Hola a todos! Soy el integrante 4. Mi enfoque está en la educación ambiental y la sensibilización comunitaria.',
             'imagen': 'IMAGEN4.jpg'
         }
