@@ -10,10 +10,10 @@ st.title("Áreas Naturales Protegidas (ANP) de Administración Nacional Definiti
 
 # Definir las opciones con botones dentro de un expander
 with st.expander("Selecciona una opción:", expanded=True):
-    opcion = st.radio("", ("Introducción", "Áreas por Regiones", "Areas de regiones en km","Areas de regiones en k2","NOSOTROS"), index=0, format_func=lambda x: x)
+    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución Regional de Áreas Protegidas", "Superficie territorial de las Áreas Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
 
 # Mostrar contenido según la opción seleccionada
-if opcion == "Introducción":
+if opcion == "Introducción a las Áreas Protegidas del Perú":
     with st.expander("Introducción"):
         st.write("""
         Las Áreas Naturales Protegidas (ANP) de Administración Nacional en Perú, gestionadas por el SERNANP, buscan conservar la biodiversidad, los ecosistemas y el patrimonio cultural. Protegen especies en peligro de extinción y sitios arqueológicos importantes. El SERNANP regula actividades humanas y fomenta el turismo sostenible y la investigación científica. La red de ANP incluye diversos ecosistemas, desde la Amazonía hasta los Andes y la costa, asegurando la preservación del patrimonio natural y cultural del país.
@@ -132,7 +132,7 @@ if opcion == "Introducción":
 
 
 
-elif opcion == "Áreas por Regiones":
+elif opcion == "Distribución Regional de Áreas Protegidas":
     st.header("Áreas Protegidas por Regiones")
     st.write("""
     Aquí podrías proporcionar información detallada sobre las áreas protegidas por regiones en Perú.
@@ -144,9 +144,6 @@ elif opcion == "Áreas por Regiones":
 
     filename = 'PARTE3.csv'
     df = pd.read_csv("PARTE3.csv") #pd.read_excel("PARTE2.xlsx")
-
-    # Configurar la aplicación con Streamlit
-    st.title('Áreas Naturales Protegidas por Regiones')
 
     # Obtener las opciones únicas de la columna ANP_UBPO (regiones)
     regiones = df['ANP_UBPO'].unique()
@@ -211,7 +208,7 @@ elif opcion == "Áreas por Regiones":
 
 
 
-elif opcion == "Areas de regiones en km":
+elif opcion == "Superficie territorial de las Áreas Protegidas en el Perú":
     # Datos de áreas protegidas (ejemplo ficticio)
     archivo = pd.read_csv('PARTE4.csv')
     areas = archivo['ANP_UBPO'].unique()
@@ -225,8 +222,8 @@ elif opcion == "Areas de regiones en km":
     ]
 
     # Mostrar el título y selección de áreas protegidas
-    st.header('Áreas Protegidas en Perú')
-    area_seleccionada = st.selectbox('Seleccione el área (ANP_UBPO)', areas)
+    st.header('Extensión Territorial de las Áreas Protegidas en el Perú: Superficie en km²')
+    area_seleccionada = st.selectbox('Selecciona una región', areas)
 
     # Filtrar datos según el área seleccionada
     data_area = archivo[archivo['ANP_UBPO'] == area_seleccionada]
@@ -315,7 +312,7 @@ elif opcion == "Areas de regiones en km":
 
 
 
-elif opcion == "Areas de regiones en k2":
+elif opcion == "Antigüedad Histórica de las Áreas Protegidas del Perú":
          # Cargar el archivo CSV
     archivo_csv = 'parte6.csv'  # Reemplaza con el nombre correcto de tu archivo CSV
     archivo = pd.read_csv(archivo_csv)
@@ -390,7 +387,7 @@ elif opcion == "Areas de regiones en k2":
 
 
 
-elif opcion == "NOSOTROS":
+elif opcion == "Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú":
         # Título principal
     st.title('Conoce a nuestro equipo de Ingeniería Ambiental')
 
