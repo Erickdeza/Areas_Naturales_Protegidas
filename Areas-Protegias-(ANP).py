@@ -143,7 +143,7 @@ elif opcion == "Áreas por Regiones":
     import matplotlib.pyplot as plt
 
     filename = 'PARTE3.csv'
-    df = pd.read_csv(filename)
+    df = pd.read_csv("PARTE3.csv") #pd.read_excel("PARTE2.xlsx")
 
     # Configurar la aplicación con Streamlit
     st.title('Áreas Naturales Protegidas por Regiones')
