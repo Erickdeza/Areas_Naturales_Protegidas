@@ -380,48 +380,50 @@ elif opcion == "Antigüedad de Áreas Naturales Protegidas del Perú":
     # Pregunta 2 y respuesta con imagen
     st.write("DATOS CURIOSOS QUE DEBES CONOCER")
     st.write("1. Sabías que el Parque Nacional del Manu, ubicado en la región de Madre de Dios y establecido en 1973, es reconocido por la UNESCO como Reserva de Biosfera y Patrimonio de la Humanidad desde 1987.")
-
+    st.image('IMAGEN15.jpeg', caption='imagen de Areas Naturales Protegidas')
     # Pregunta 3 y respuesta con imagen
     st.write("2. Sabías que la Reserva Nacional de Pampa Galeras-Barbara D'Achille, ubicada en la región de Ayacucho, es conocida por ser un santuario para la conservación de la vicuña, una especie emblemática de los Andes peruanos. Esta reserva fue creada en 1967.")
-
+    st.image('IMAGEN16.jpeg', caption='imagen de Areas Naturales Protegidas')
 
 
 
 elif opcion == "Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú":
         # Título principal
     st.title('¿Quienes somos?')
-
+    import streamlit as st
+    
+    st.title('Conoce a nuestro equipo de Ingeniería Ambiental')
+    
+    # Mostrar video
+    st.video("VIDEO10.mp4")
+    
     # Información de cada integrante
     integrantes = [
         {
-            'nombre': 'Deza Mamani Erick Armando',
-            'descripcion': 'Hola! Soy el integrante 1. Me apasiona la conservación de la biodiversidad y la gestión sostenible de recursos naturales.',
+            'Deza Mamani Erick Armando Deza': 'Integrante 1',
+            'descripcion': 'Hola! Soy el integrante 1. Me apasiona la conservación de la biodiversidad y la gestión sostenible de recursos naturales.'
         },
         {
-            'nombre': 'Flores Messco Fiorella Ingrid ',
-            'descripcion': '¡Hola a todos! Soy el integrante 2. Mi interés principal es la calidad del aire y el impacto ambiental de las industrias.',
+            'Flores Mescco Fiorella Ingrit': 'Integrante 2',
+            'descripcion': '¡Hola a todos! Soy el integrante 2. Mi interés principal es la calidad del aire y el impacto ambiental de las industrias.'
         },
         {
-            'nombre': 'Huamani Huallpa Ibet Yesenia',
-            'descripcion': 'Saludos! Soy el integrante 3. Me especializo en la gestión de residuos sólidos y la promoción de prácticas ecoamigables.',
+            'Huamani Huallpa, Yesenia Ibet': 'Integrante 3',
+            'descripcion': 'Saludos! Soy el integrante 3. Me especializo en la gestión de residuos sólidos y la promoción de prácticas ecoamigables.'
         },
         {
-            'nombre': 'Sanchez Ticllasuca Brenda Estefany',
-            'descripcion': 'Hola a todos! Soy el integrante 4. Mi enfoque está en la educación ambiental y la sensibilización comunitaria.',
+            ' Sanchez Ticllasuca  Brenda Estefany': 'Integrante 4',
+            'descripcion': 'Hola a todos! Soy el integrante 4. Mi enfoque está en la educación ambiental y la sensibilización comunitaria.'
         }
     ]
-
+    
     # Mostrar información de cada integrante
     for integrante in integrantes:
         st.header(integrante['nombre'])
-        try:
-            st.image( caption=integrante['nombre'], use_column_width=True)
-        except FileNotFoundError:
-            st.write(f"No se pudo encontrar la imagen {integrante['imagen']}. Verifica la ruta y asegúrate de que el archivo esté disponible.")
         if st.checkbox(f"Mostrar descripción de {integrante['nombre']}"):
             st.write(integrante['descripcion'])
         st.markdown('---')  # Separador entre integrantes
-
+    
     # Campo para comentarios o retroalimentación
     st.header('Comentarios y Retroalimentación')
     comentario = st.text_area('Escribe aquí tu comentario o retroalimentación:', height=150)
