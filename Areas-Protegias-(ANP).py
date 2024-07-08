@@ -10,7 +10,7 @@ st.title("Áreas Naturales Protegidas (ANP) de Administración Nacional Definiti
 
 # Definir las opciones con botones dentro de un expander
 with st.expander("Selecciona una opción:", expanded=True):
-    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución de áreas naturales por departamento", "Superficie territorial de las Áreas Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
+    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución de áreas naturales por departamento", "Superficie Territorial de Áreas Naturales Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
 
 # Mostrar contenido según la opción seleccionada
 if opcion == "Introducción a las Áreas Protegidas del Perú":
@@ -208,7 +208,7 @@ elif opcion == "Distribución de áreas naturales por departamento":
 
 
 
-elif opcion == "Superficie territorial de las Áreas Protegidas en el Perú":
+elif opcion == "Superficie Territorial de Áreas Naturales Protegidas en el Perú":
     # Datos de áreas protegidas (ejemplo ficticio)
     archivo = pd.read_csv('PARTE4.csv')
     areas = archivo['ANP_UBPO'].unique()
@@ -222,7 +222,7 @@ elif opcion == "Superficie territorial de las Áreas Protegidas en el Perú":
     ]
 
     # Mostrar el título y selección de áreas protegidas
-    st.header('Extensión Territorial de las Áreas Protegidas en el Perú: Superficie en km²')
+    st.header('Extensión Territorial de las Áreas Protegidas en el Perú: Superficie en hectáreas(ha)')
     area_seleccionada = st.selectbox('Selecciona una región', areas)
 
     # Filtrar datos según el área seleccionada
@@ -244,9 +244,9 @@ elif opcion == "Superficie territorial de las Áreas Protegidas en el Perú":
                     ha='center', va='bottom', fontsize=10, color='black', xytext=(0, 5),
                     textcoords='offset points')
 
-    ax.set_title(f'Categorías de Áreas Protegidas en {area_seleccionada}')
-    ax.set_xlabel('Categoría (ANP_CATE)')
-    ax.set_ylabel('Superficie (ANP_SULEG)')
+    ax.set_title(f'Categorías de Áreas Naturales Protegidas en {area_seleccionada}')
+    ax.set_xlabel('Áreas Naturales Protegidas(ANP)')
+    ax.set_ylabel('Superficie territorial(ha).')
     plt.tight_layout()
 
     # Mostrar el gráfico en Streamlit
@@ -287,15 +287,15 @@ elif opcion == "Superficie territorial de las Áreas Protegidas en el Perú":
 
     # Pregunta inicial
     st.write('Pregunta:')
-    st.write("¿Cuándo fue creado el Servicio Nacional de Áreas Naturales Protegidas por el estado?")
+    st.write("Dato Curioso")
 
     # Respuesta correcta
-    respuesta_correcta = "El Servicio Nacional de Áreas Naturales Protegidas por el Estado (SERNANP) fue creado el 13 de mayo del año 2008, como organismo público técnico especializado adscrito al Ministerio del Ambiente y ente rector del Sistema Nacional de Áreas Naturales Protegidas por el Estado (SINANPE)."
+    respuesta_correcta = "Algunos datos extraídos del año 2011 (Datos recopilados 11 años antes) veamos la diferencia."
 
     # Botón para mostrar la respuesta
-    if st.button('Mostrar respuesta'):
+    if st.button('Mostrar Dato curioso'):
         st.info(respuesta_correcta)
-        st.image('IMAGEN2.jpeg', caption='Imagen relacionada')
+        st.image('IMAGEN2.jpeg', caption='Elaboración de MINAM_2011(ANP)')
 
     # Expander para información adicional
     with st.expander('Más información sobre SERNANP'):
