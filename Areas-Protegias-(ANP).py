@@ -16,7 +16,7 @@ with st.expander("Selecciona una opción:", expanded=True):
 if opcion == "Introducción a las Áreas Protegidas del Perú":
     with st.expander("Introducción"):
         st.write("""
-        Las Áreas Naturales Protegidas (ANP) de Administración Nacional en Perú, gestionadas por el SERNANP, buscan conservar la biodiversidad, los ecosistemas y el patrimonio cultural. Protegen especies en peligro de extinción y sitios arqueológicos importantes. El SERNANP regula actividades humanas y fomenta el turismo sostenible y la investigación científica. La red de ANP incluye diversos ecosistemas, desde la Amazonía hasta los Andes y la costa, asegurando la preservación del patrimonio natural y cultural del país.
+        El informe presenta un estudio sobre las Áreas Naturales Protegidas (ANP) de Administración Nacional Definitiva en Perú, subrayando su importancia en la conservación de la biodiversidad y la sostenibilidad ambiental. Utilizando datos del SERNANP, se ha creado una aplicación web interactiva con tecnologías como Streamlit y Visual Studio Code, que facilita la visualización y el análisis de la distribución y extensión de las ANP.
         """)
         # Mostrar la imagen
         imagen = "IMAGEN6.jpg"
@@ -72,55 +72,55 @@ if opcion == "Introducción a las Áreas Protegidas del Perú":
     st.title("Tipos de Áreas Naturales Protegidas en Perú")
     with st.expander("1. Parque Nacional"):
         st.write("Área protegida para conservar biodiversidad y paisajes, con recreación controlada y educación ambiental.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales.”')
         video = open('video1.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("2. Reserva Nacional"):
         st.write("Área para conservación, investigación y uso sostenible de recursos naturales bajo normativas específicas.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"Cuidar las áreas protegidas es un acto de amor hacia nuestro planeta."')
         video = open('video2.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("3. Santuario Nacional"):
         st.write("Área protegida para conservar especies o hábitats únicos, restringiendo la actividad humana para su preservación a largo plazo.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"Las áreas naturales protegidas son el santuario de la tierra."')
         video = open('video3.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("4. Santuario Histórico"):
         st.write("Espacio designado para proteger y conservar sitios importantes relacionados con eventos, personas o culturas significativas de la historia.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"Respeta y protege las áreas naturales para que las futuras generaciones también puedan disfrutar de su belleza."')
         video = open('video4.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("5. Refugio de Vida Silvestre"):
         st.write("Espacio para conservar hábitats y especies amenazadas, fomenta investigación y educación ambiental.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"La riqueza de una nación se mide por su capacidad de conservar sus áreas naturales."')
         video = open('video5.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("6. Bosque de Protección"):
         st.write("Área forestal para conservar ecosistemas y biodiversidad.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('"Cada árbol, cada río, cada especie en una área protegida es un recordatorio de la belleza del planeta."')
         video = open('video6.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("7. Reserva Paisajista"):
         st.write("Reserva que permite el uso y aprovechamiento sostenible de recursos por poblaciones locales mediante planes de manejo. Actualmente hay dos en Perú.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('“La naturaleza es la puerta al alma.”')
         video = open('video7.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("8. Reserva Comunales"):
         st.write("Son áreas naturales protegidas de uso directo. Actualmente existen en el Perú 10 Reservas Comunales.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('“No existe nada más pacífico que la contemplación de la naturaleza.”')
         video = open('video8.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
     with st.expander("9. Coto de Caza"):
         st.write("Espacios destinados al aprovechamiento de la fauna silvestre. Son áreas naturales protegidas de uso directo. Actualmente existen en el Perú 2 Cotos de Caza.")
-        st.subheader('"Explorar una reserva nacional es como abrir un cofre lleno de maravillas naturales”')
+        st.subheader('“Áreas protegidas, tesoros compartidos.”')
         video = open('video9.mp4', 'rb')
         video_1 = video.read()
         st.video(video_1)
