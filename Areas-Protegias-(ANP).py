@@ -10,7 +10,7 @@ st.title("Áreas Naturales Protegidas (ANP) de Administración Nacional Definiti
 
 # Definir las opciones con botones dentro de un expander
 with st.expander("Selecciona una opción:", expanded=True):
-    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución de áreas naturales por departamento", "Superficie Territorial de Áreas Naturales Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
+    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución de áreas naturales por departamento", "Superficie Territorial de Áreas Naturales Protegidas en el Perú","Antigüedad de Áreas Naturales Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
 
 # Mostrar contenido según la opción seleccionada
 if opcion == "Introducción a las Áreas Protegidas del Perú":
@@ -312,7 +312,7 @@ elif opcion == "Superficie Territorial de Áreas Naturales Protegidas en el Per�
 
 
 
-elif opcion == "Antigüedad Histórica de las Áreas Protegidas del Perú":
+elif opcion == "Antigüedad de Áreas Naturales Protegidas del Perú":
          # Cargar el archivo CSV
     archivo_csv = 'parte6.csv'  # Reemplaza con el nombre correcto de tu archivo CSV
     archivo = pd.read_csv(archivo_csv)
@@ -367,10 +367,10 @@ elif opcion == "Antigüedad Histórica de las Áreas Protegidas del Perú":
     )
 
     # Pregunta 1 y respuesta con imagen
-    st.write("PREGUNTA 1: ¿Cuál de las áreas Naturales y Protegidas es la más antigua en el Perú?")
+    st.write("PREGUNTA 1: ¿Qué Área Natural Protegida es la más antigua en el Perú?")
     respuesta1 = """
     **Respuesta:**  
-    La Reserva Nacional de Lachay es una de las áreas protegidas más antiguas del Perú. Fue establecida el 21 de junio de 1977 mediante el Decreto Supremo N° 310-77-AG. La reserva es conocida por sus bosques de niebla que albergan una gran diversidad de flora y fauna.
+    El Parque Nacional de Cutervo, establecido en 1961, es el parque nacional más antiguo del Perú. Ubicado en la región de Cajamarca, este parque protege un área de aproximadamente 8,214 hectáreas. Es conocido por su diversa fauna y flora, que incluye especies emblemáticas como el oso de anteojos y el gallito de las rocas. Además, el parque alberga importantes ecosistemas de bosques montanos y cuevas, como la Cueva de los Guácharos, hogar del raro ave guácharo. La creación de este parque marcó un hito en la conservación de la biodiversidad en el Perú.
     """
     # Mostrar respuesta 1 con imagen alineada a la derecha
     if st.button('Mostrar respuesta 1'):
