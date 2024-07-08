@@ -149,7 +149,7 @@ elif opcion == "Distribución de áreas naturales por departamento":
     regiones = df['ANP_UBPO'].unique()
 
     # Mostrar el selector de regiones debajo del título
-    st.write('Selecciona una región:')
+    st.header('Selecciona una región:')
     selected_region = st.selectbox('', regiones)
 
     # Filtrar el DataFrame por la región seleccionada
