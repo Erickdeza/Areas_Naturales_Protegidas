@@ -10,7 +10,7 @@ st.title("Áreas Naturales Protegidas (ANP) de Administración Nacional Definiti
 
 # Definir las opciones con botones dentro de un expander
 with st.expander("Selecciona una opción:", expanded=True):
-    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución Regional de Áreas Protegidas", "Superficie territorial de las Áreas Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
+    opcion = st.radio("", ("Introducción a las Áreas Protegidas del Perú", "Distribución de áreas naturales por departamento", "Superficie territorial de las Áreas Protegidas en el Perú","Antigüedad Histórica de las Áreas Protegidas del Perú","Nosotros: Presentación del Grupo y su Compromiso con las Áreas Protegidas del Perú"), index=0, format_func=lambda x: x)
 
 # Mostrar contenido según la opción seleccionada
 if opcion == "Introducción a las Áreas Protegidas del Perú":
@@ -132,7 +132,7 @@ if opcion == "Introducción a las Áreas Protegidas del Perú":
 
 
 
-elif opcion == "Distribución Regional de Áreas Protegidas":
+elif opcion == "Distribución de áreas naturales por departamento":
     st.header("Áreas Protegidas por Regiones")
     st.write("""
     Aquí podrías proporcionar información detallada sobre las áreas protegidas por regiones en Perú.
@@ -149,7 +149,7 @@ elif opcion == "Distribución Regional de Áreas Protegidas":
     regiones = df['ANP_UBPO'].unique()
 
     # Mostrar el selector de regiones debajo del título
-    st.header('Selecciona una región:')
+    st.write('Selecciona una región:')
     selected_region = st.selectbox('', regiones)
 
     # Filtrar el DataFrame por la región seleccionada
