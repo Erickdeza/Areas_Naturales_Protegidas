@@ -415,7 +415,7 @@ elif opcion == "Nosotros: Presentación del Grupo y su Compromiso con las Áreas
     for integrante in integrantes:
         st.header(integrante['nombre'])
         try:
-            st.image(integrante['imagen'], caption=integrante['nombre'], use_column_width=True)
+            st.image( caption=integrante['nombre'], use_column_width=True)
         except FileNotFoundError:
             st.write(f"No se pudo encontrar la imagen {integrante['imagen']}. Verifica la ruta y asegúrate de que el archivo esté disponible.")
         if st.checkbox(f"Mostrar descripción de {integrante['nombre']}"):
